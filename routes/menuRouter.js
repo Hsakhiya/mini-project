@@ -7,7 +7,7 @@ const router = express.Router()
 
 router.get('/getmenu',MenuController.getMenu)
 
-router.post('/addmenus',MenuController.addMenu)
+router.post('/addmenu',MenuController.addMenu)
 
 
 
