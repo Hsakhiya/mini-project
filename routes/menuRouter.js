@@ -1,13 +1,18 @@
 import express from "express"
 import MenuController from "../controllers/menuController.js"
+import MenuItem from "../models/menuModel.js"
 const router = express.Router()
 
 
 
 
-router.get('/getmenu',MenuController.getMenu)
+router.get('/menu/getItems',MenuController.getItem)
 
-router.post('/addmenu',MenuController.addMenu)
+router.post('/menu/addItem',MenuController.addItem)
+
+router.delete('/menu/delete',MenuController.deleteItem)
+
+router.patch('/menu/update',MenuController.updateItem)
 
 
 
